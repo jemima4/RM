@@ -1,5 +1,5 @@
-@use '../abstracts/theme' as *;
-@use '../../../@core/styles/abstracts/media-query' as *;
+@use "../abstracts/theme" as *;
+@use "../../../@core/styles/abstracts/media-query" as *;
 
 .zns-accordion {
   padding: 1.5rem;
@@ -23,7 +23,7 @@
   .accordion-button {
     padding: 1rem 1.5rem;
     font-weight: 600;
-    font-sizek: 1.25rem;
+    font-size: 1.25rem;
     line-height: 1.5rem;
     color: var(--zns-neutral-800);
     background-color: inherit !important;
@@ -53,7 +53,7 @@
       width: 1.5rem;
       height: 1.5rem;
       margin-left: auto;
-      content: '';
+      content: "";
       background-image: url(../../../../assets/icons/add.svg);
       background-repeat: no-repeat;
       background-size: 1.5rem;
@@ -116,7 +116,7 @@
     }
 
     &::after {
-      content: '';
+      content: "";
       width: 1.5rem;
       height: 1.5rem;
       margin-left: auto;
@@ -147,7 +147,7 @@
   .accordion-button {
     padding: 0.3125rem 1.25rem;
     height: 2rem;
-    font-family: 'Greycliff CF';
+    font-family: "Greycliff CF";
     font-style: normal;
     font-weight: 400;
     font-size: 0.875rem;
@@ -197,8 +197,8 @@
       width: 1.5rem;
       height: 1.5rem;
       margin-left: auto;
-      content: '';
-      background-image: url(../../../../assets/icons/chevron-down.svg);
+      content: "";
+      background-image: url(../../../../assets/icons/chevron-down-active.svg); // remember to add chevron-down.svg instead of this
       background-repeat: no-repeat;
       background-size: 1.5rem;
     }
