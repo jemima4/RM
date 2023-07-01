@@ -1,4 +1,4 @@
-.rv-login-bg-image {
+.rv-login-bg {
   background-image: url("../../../assets/images/auth-backdrop.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -8,8 +8,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
 
-
+  @media only screen and (max-width: 768px) {
+    height: 100vh;
+    overflow: hidden;
+  }
 
   .rv-box {
     background: white;
@@ -22,6 +26,11 @@
     align-items: center;
     padding: 1rem;
     //  margin:0 auto;
+
+    @media only screen and (max-width: 768px) {
+      height: 70%;
+      width: 95%;
+    }
   }
 
   .rv-box-container {
@@ -31,6 +40,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media only screen and (max-width: 768px) {
+      width: 80%;
+    }
   }
   .rv-head-logo {
     margin-bottom: 1rem;
@@ -57,5 +70,8 @@
     width: 100%;
     margin-top: 3rem;
     border-radius: 12px;
+    @media only screen and (max-width: 768px) {
+      border-radius: 8px;
+    }
   }
 }
