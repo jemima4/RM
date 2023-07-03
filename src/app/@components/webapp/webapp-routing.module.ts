@@ -7,6 +7,11 @@ import { ProcurementComponent } from './procurement/procurement.component';
 const routes: Routes = [
   {
     path: '',
+    redirectTo: 'dashboard',
+    pathMatch: 'full',
+  },
+  {
+    path: '',
     component: WebappComponent,
     children: [
       { path: 'dashboard', component: DashboardComponent },
