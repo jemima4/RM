@@ -19,6 +19,13 @@ const routes: Routes = [
         path: 'procurement',
         component: ProcurementComponent,
       },
+      {
+        path: 'inventory',
+        loadChildren: () =>
+          import('src/app/@components/webapp/inventory/inventory.module').then(
+            (m) => m.InventoryModule
+          ),
+      },
     ],
   },
 ];
