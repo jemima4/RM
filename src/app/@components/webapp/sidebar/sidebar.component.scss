@@ -1,0 +1,22 @@
+h1 {
+  margin-left: 2rem;
+  color: #242424;
+  font-weight: 500;
+}
+.sidebar-link {
+  margin: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+
+  mat-icon {
+    margin-right: 0.4rem;
+    color: #575757;
+  }
+
+  span {
+    color: #575757;
+    font: 400;
+  }
+}
