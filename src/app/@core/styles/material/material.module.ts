@@ -23,6 +23,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatDialogModule } from '@angular/material/dialog';
 
 const material = [
   MatButtonModule,
@@ -49,6 +50,8 @@ const material = [
   MatToolbarModule,
   MatIconModule,
   MatSidenavModule,
+  MatDialogModule,
+  MatFormFieldModule
 ];
 
 @NgModule({

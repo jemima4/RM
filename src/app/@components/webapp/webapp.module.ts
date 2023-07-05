@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { InventoryModule } from './inventory/inventory.module';
 import { WebappRoutingModule } from './webapp-routing.module';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { WebappComponent } from './webapp.component';
