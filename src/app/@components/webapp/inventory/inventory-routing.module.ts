@@ -5,12 +5,22 @@ import { ProductsCategoryComponent } from './products-category/products-category
 import { WarehouseComponent } from './warehouse/warehouse.component';
 
 const routes: Routes = [
-    {path: '', component: InventoryComponent, children: [
-        {path: 'products-category', component: ProductsCategoryComponent},
-        {path: 'warehouse', component: WarehouseComponent}
-    ]},
-
-    
+  {
+    path: '',
+    component: InventoryComponent,
+    children: [
+      {
+        path: 'products-category',
+        component: ProductsCategoryComponent,
+        data: { breadcrumb: 'Products Categories' },
+      },
+      {
+        path: 'warehouse',
+        component: WarehouseComponent,
+        data: { breadcrumb: 'Warehouse' },
+      },
+    ],
+  },
 ];
 
 @NgModule({

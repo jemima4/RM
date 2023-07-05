@@ -1,0 +1,13 @@
+.rv-breadcrumbs {
+  .breadcrumb {
+    height: 2rem;
+    // background-color: coral;
+    justify-content: start;
+    align-items: center;
+
+    & a {
+      text-decoration: none;
+      padding-right: 1rem;
+    }
+  }
+}

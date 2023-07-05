@@ -13,14 +13,21 @@ const routes: Routes = [
   {
     path: '',
     component: WebappComponent,
+    data: { breadcrumb: 'Home' },
     children: [
-      { path: 'dashboard', component: DashboardComponent },
+      {
+        path: 'dashboard',
+        component: DashboardComponent,
+        data: { breadcrumb: 'Dashboard ' },
+      },
       {
         path: 'procurement',
         component: ProcurementComponent,
+        data: { breadcrumb: 'Procurement ' },
       },
       {
         path: 'inventory',
+        data: { breadcrumb: 'Inventory ' },
         loadChildren: () =>
           import('src/app/@components/webapp/inventory/inventory.module').then(
             (m) => m.InventoryModule
