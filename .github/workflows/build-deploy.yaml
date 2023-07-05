@@ -33,4 +33,11 @@ jobs:
         with:
           context: .
           push: true
-          tags: rventory/image:latest
+          tags: aoaclothings7/rventory:latest
+
+      - name: Build and push Docker image
+        uses: docker/build-push-action@master
+        with:
+          context: .
+          push: true
+          tags: theola4/rventory:latest
