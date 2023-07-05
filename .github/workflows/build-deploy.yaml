@@ -33,7 +33,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: aoaclothings7/rventory:latest
+          tags: aoa7clothings/rventory:latest
 
       - name: Build and push Docker image
         uses: docker/build-push-action@master
