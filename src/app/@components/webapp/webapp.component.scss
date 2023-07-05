@@ -1,4 +1,3 @@
-
 #webapp {
   .body {
     width: calc(100% - 5rem);
@@ -8,18 +7,17 @@
     position: relative;
     top: 0;
     transition: all 0.5s ease;
-    background: #f4f4f4;
-    padding: 3rem;
+    background: #ffffff;
+    padding: 0 2rem 3rem 2rem;
   }
-  
+
   .body-trimmed {
     width: calc(100% - 16.5625rem);
     margin-left: 16.5625rem;
   }
-  
+
   .body-md-screen {
     width: calc(100% - 5rem);
     margin-left: 5rem;
   }
-
 }

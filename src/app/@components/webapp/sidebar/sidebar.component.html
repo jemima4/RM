@@ -56,15 +56,21 @@
             </mat-expansion-panel-header>
 
             <div class="inner-links">
-              <a [routerLink]="['procurement']">Sales quotation</a>
+              <a [routerLink]="['procurement']" (click)="toggleCollapse()"
+                >Sales quotation</a
+              >
             </div>
 
             <div class="inner-links">
-              <a [routerLink]="['procurement']">Customers</a>
+              <a [routerLink]="['procurement']" (click)="toggleCollapse()"
+                >Customers</a
+              >
             </div>
 
             <div class="inner-links">
-              <a [routerLink]="['procurement']">Goods Delivered</a>
+              <a [routerLink]="['procurement']" (click)="toggleCollapse()"
+                >Goods Delivered</a
+              >
             </div>
           </mat-expansion-panel>
         </li>
@@ -95,15 +101,21 @@
             </mat-expansion-panel-header>
 
             <div class="inner-links">
-              <a [routerLink]="['procurement']">Purchase Request</a>
+              <a [routerLink]="['procurement']" (click)="toggleCollapse()"
+                >Purchase Request</a
+              >
             </div>
 
             <div class="inner-links">
-              <a [routerLink]="['procurement']">Vendors</a>
+              <a [routerLink]="['procurement']" (click)="toggleCollapse()"
+                >Vendors</a
+              >
             </div>
 
             <div class="inner-links">
-              <a [routerLink]="['procurement']">Goods Received</a>
+              <a [routerLink]="['procurement']" (click)="toggleCollapse()"
+                >Goods Received</a
+              >
             </div>
           </mat-expansion-panel>
         </li>
@@ -132,21 +144,29 @@
             </mat-expansion-panel-header>
 
             <div class="inner-links">
-              <a [routerLink]="['procurement']">Products</a>
+              <a [routerLink]="['procurement']" (click)="toggleCollapse()"
+                >Products</a
+              >
             </div>
 
             <div class="inner-links">
-              <a [routerLink]="['inventory', 'products-category']"
+              <a
+                [routerLink]="['inventory', 'products-category']"
+                (click)="toggleCollapse()"
                 >Products Category</a
               >
             </div>
 
             <div class="inner-links">
-              <a [routerLink]="['procurement']">Warehouse</a>
+              <a [routerLink]="['procurement']" (click)="toggleCollapse()"
+                >Warehouse</a
+              >
             </div>
 
             <div class="inner-links">
-              <a [routerLink]="['procurement']">Internal Transfer</a>
+              <a [routerLink]="['procurement']" (click)="toggleCollapse()"
+                >Internal Transfer</a
+              >
             </div>
           </mat-expansion-panel>
         </li>

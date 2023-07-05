@@ -18,16 +18,16 @@ const routes: Routes = [
       {
         path: 'dashboard',
         component: DashboardComponent,
-        data: { breadcrumb: 'Dashboard ' },
+        data: { breadcrumb: 'Dashboard' },
       },
       {
         path: 'procurement',
         component: ProcurementComponent,
-        data: { breadcrumb: 'Procurement ' },
+        data: { breadcrumb: 'Procurement' },
       },
       {
         path: 'inventory',
-        data: { breadcrumb: 'Inventory ' },
+        data: { breadcrumb: 'Inventory' },
         loadChildren: () =>
           import('src/app/@components/webapp/inventory/inventory.module').then(
             (m) => m.InventoryModule
