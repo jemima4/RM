@@ -1,11 +1,11 @@
-<mat-sidenav-container>
-  <mat-sidenav mode="side" #sidenav>
-    <app-sidebar></app-sidebar>
-  </mat-sidenav>
+<section id="webapp">
+  <app-sidebar (onToggleSideNav)="onToggleSideNav($event)"></app-sidebar>
 
-  <mat-sidenav-content>
-    <button mat-icon-button (click)="sidenav.toggle()">
-      <mat-icon>keyboard_arrow_left</mat-icon>
-    </button>
-  </mat-sidenav-content>
-</mat-sidenav-container>
+  <div class="body" [ngClass]="getBodyClass()">
+    <mat-toolbar>
+      <span>Procurement</span>
+    </mat-toolbar>
+    <app-breadcrumb></app-breadcrumb>
+    <router-outlet></router-outlet>
+  </div>
+</section>
