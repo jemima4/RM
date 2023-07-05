@@ -9,9 +9,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProcurementComponent } from './procurement/procurement.component';
 import { InventoryComponent } from './inventory/inventory.component';
 import { ProductsCategoryComponent } from './inventory/products-category/products-category.component';
+import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 
 @NgModule({
-  declarations: [WebappComponent, SidebarComponent, DashboardComponent, ProcurementComponent, InventoryComponent, ProductsCategoryComponent],
-  imports: [CommonModule, WebappRoutingModule, MaterialModule, InventoryModule],
+  declarations: [WebappComponent, SidebarComponent, DashboardComponent, ProcurementComponent, InventoryComponent, ProductsCategoryComponent, BreadcrumbComponent],
+  imports: [CommonModule, WebappRoutingModule, MaterialModule],
 })
 export class WebappModule {}

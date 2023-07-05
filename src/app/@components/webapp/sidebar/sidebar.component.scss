@@ -19,13 +19,13 @@
         background: #fff;
         text-align: center;
         width: 3rem;
-        min-width: 3rem;
+        min-width: 3.5rem;
         border-radius: 0.313rem;
         padding: 0.313rem;
         font-size: 1.5rem;
         font-weight: 900;
         cursor: pointer;
-        border: none;
+        border: 2px solid rgb(222, 177, 177);
       }
 
       .rv-logo-text {
@@ -96,13 +96,14 @@
       .rv-sidenav-nav-link {
         // border: 1px solid #1b1a1a;
         box-shadow: 0.063rem 0 0.25rem 0 #8690a3;
+        color: #000;
       }
     }
   }
 
   .active {
     // background-color: #1b1a1a;
-    box-shadow: 0.063rem 0 0.25rem 0 #8690a3;
+    // box-shadow: 0.063rem 0 0.25rem 0 #8690a3;
     .rv-sidenav-link-icon,
     .rv-sidenav-link-text {
       color: #000;
@@ -115,6 +116,9 @@
   }
   .inner-links {
     margin-bottom: 1rem;
+    & a:hover {
+      color: #060606;
+    }
 
     & a {
       text-decoration: none;
