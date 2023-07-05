@@ -9,12 +9,20 @@ const routes: Routes = [
         (m) => m.WebsiteModule
       ),
   },
+
+  
   {
     path: 'app',
     loadChildren: () =>
       import('src/app/@components/webapp/webapp.module').then(
         (m) => m.WebappModule
       ),
+  },
+
+  {
+    path: 'auth',
+    loadChildren: () =>
+      import('src/app/@auth/auth.module').then((m) => m.AuthModule),
   },
 ];
 
