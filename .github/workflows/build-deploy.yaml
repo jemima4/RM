@@ -3,7 +3,7 @@ name: DockerHub Workflow
 on:
   push:
     branches:
-      - workflow
+      - main
 
 jobs:
   build_and_push:
